@@ -29,9 +29,13 @@ import styles from "./page.module.css";
 
 const { basics, work, education, projects, skills } = cv;
 
-const linkedin = basics.profiles.find((profile) => profile.network === "LinkedIn");
+const linkedin = basics.profiles.find(
+  (profile) => profile.network === "LinkedIn",
+);
 const github = basics.profiles.find((profile) => profile.network === "GitHub");
-const printInfo = [basics.email, basics.phone, linkedin?.url].filter(Boolean).join(" • ");
+const printInfo = [basics.email, basics.phone, linkedin?.url]
+  .filter(Boolean)
+  .join(" • ");
 
 const SOCIAL_TAGS: Record<string, string> = {
   LinkedIn: "in",
@@ -78,7 +82,8 @@ const paletteCommands = [
     section: "Social",
     title: `Visitar ${profile.network}`,
     url: profile.url,
-    icon: SOCIAL_TAGS[profile.network] ?? profile.network.slice(0, 2).toUpperCase(),
+    icon:
+      SOCIAL_TAGS[profile.network] ?? profile.network.slice(0, 2).toUpperCase(),
     hotkey: `ctrl+${profile.network[0]?.toLowerCase() ?? "k"}`,
   })),
 ];
@@ -139,14 +144,23 @@ export default function Page() {
               <footer className={styles.print}>{printInfo}</footer>
 
               <footer className={styles.socials}>
-                <a href={`mailto:${basics.email}`} title={`Enviar correo a ${basics.name}`}>
+                <a
+                  href={`mailto:${basics.email}`}
+                  title={`Enviar correo a ${basics.name}`}
+                >
                   <Mail className={styles.socialIcon} aria-hidden="true" />
                 </a>
-                <a href={`tel:${basics.phone}`} title={`Llamar a ${basics.name}`}>
+                <a
+                  href={`tel:${basics.phone}`}
+                  title={`Llamar a ${basics.name}`}
+                >
                   <Phone className={styles.socialIcon} aria-hidden="true" />
                 </a>
                 {basics.profiles.map((profile) => {
-                  const Icon = SOCIAL_ICONS[profile.network as keyof typeof SOCIAL_ICONS] ?? Link2;
+                  const Icon =
+                    SOCIAL_ICONS[
+                      profile.network as keyof typeof SOCIAL_ICONS
+                    ] ?? Link2;
 
                   return (
                     <a
@@ -188,7 +202,11 @@ export default function Page() {
                   <header className={styles.rowHeader}>
                     <div>
                       <h3>
-                        <a href={job.url} target="_blank" rel="noopener noreferrer">
+                        <a
+                          href={job.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
                           {job.name}
                         </a>
                       </h3>
@@ -232,10 +250,16 @@ export default function Page() {
                 <article className={styles.projectCard}>
                   <header>
                     <h3>
-                      <a href={project.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {project.name}
                       </a>
-                      {project.isActive ? <span className={styles.activeDot}> • </span> : null}
+                      {project.isActive ? (
+                        <span className={styles.activeDot}> • </span>
+                      ) : null}
                       {project.github ? (
                         <a
                           className={styles.githubLink}
@@ -253,7 +277,9 @@ export default function Page() {
 
                   <footer className={styles.tags}>
                     {project.highlights.map((highlight) => (
-                      <span key={`${project.name}-${highlight}`}>{highlight}</span>
+                      <span key={`${project.name}-${highlight}`}>
+                        {highlight}
+                      </span>
                     ))}
                   </footer>
                 </article>

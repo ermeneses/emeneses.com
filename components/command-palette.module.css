@@ -3,51 +3,56 @@
 }
 
 .footer {
-  background: #fdfdfd;
-  border-top: 1px solid #eee;
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-block: 8px;
+  padding: 10px 16px;
   text-align: center;
-  font-size: 0.85rem;
-  animation: fadeIn 0.3s linear;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  animation: fadeIn 0.25s linear;
 }
 
 .kbd {
-  background: #eee;
-  border-radius: 4px;
-  padding: 2px 4px;
-  font-size: 12px;
+  display: inline-block;
+  font-size: 0.72rem;
+  color: var(--color-text);
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 2px 6px;
 }
 
 .mobileButton {
   display: none;
-  background: #fff;
   position: fixed;
-  border: 1px solid #eee;
-  right: 10px;
-  bottom: 10px;
+  right: 12px;
+  bottom: 12px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
   align-items: center;
   justify-content: center;
   cursor: pointer;
   z-index: 62;
+  box-shadow: var(--shadow-soft);
 }
 
 .mobileButton svg {
-  width: 24px;
-  height: 24px;
-  stroke: #777;
+  width: 22px;
+  height: 22px;
+  stroke: var(--color-text-muted);
 }
 
 .backdrop {
   position: fixed;
   inset: 0;
   background: rgb(0 0 0 / 0.28);
-  backdrop-filter: blur(1px);
+  backdrop-filter: blur(2px);
   z-index: 70;
 }
 
@@ -57,115 +62,119 @@
   left: 50%;
   transform: translateX(-50%);
   width: min(680px, calc(100vw - 2rem));
-  border: 1px solid #e8e8e8;
-  border-radius: 12px;
-  background: #fff;
-  box-shadow: 0 22px 60px rgb(0 0 0 / 0.2);
+  border-radius: 14px;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: 0 20px 54px rgb(17 24 39 / 0.22);
   overflow: hidden;
   z-index: 71;
 }
 
 .inputWrap {
-  border-bottom: 1px solid #f1f1f1;
-  padding: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  padding: 12px;
 }
 
 .input {
   width: 100%;
-  border: 1px solid #ececec;
-  border-radius: 8px;
-  padding: 0.55rem 0.7rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-family: var(--font-base);
   font-size: 0.88rem;
+  color: var(--color-text);
+  background: var(--color-surface);
   outline: none;
 }
 
 .input:focus {
-  border-color: #d7d7d7;
+  border-color: var(--color-border-strong);
 }
 
 .results {
   max-height: min(56vh, 420px);
   overflow: auto;
-  padding: 0.35rem;
+  padding: 8px;
 }
 
 .section {
-  margin-bottom: 0.35rem;
+  margin-bottom: 8px;
 }
 
 .sectionTitle {
+  margin: 6px 8px;
   font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  color: #777;
+  letter-spacing: 0.11em;
   text-transform: uppercase;
-  margin: 0.35rem 0.4rem;
+  color: var(--color-text-muted);
 }
 
 .command {
   width: 100%;
-  text-align: left;
   border: none;
+  border-radius: 10px;
   background: transparent;
-  border-radius: 8px;
-  padding: 0.55rem 0.5rem;
+  padding: 9px 8px;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 0.6rem;
+  gap: 10px;
   cursor: pointer;
 }
 
 .command:hover,
 .commandActive {
-  background: #f4f4f4;
+  background: var(--color-surface-muted);
 }
 
 .commandLeft {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 10px;
   min-width: 0;
 }
 
 .icon {
   min-width: 26px;
   height: 26px;
-  border: 1px solid #ececec;
-  border-radius: 6px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
   display: grid;
   place-items: center;
-  color: #555;
+  color: var(--color-text-muted);
   font-size: 0.72rem;
   font-weight: 600;
 }
 
 .commandTitle {
-  font-size: 0.85rem;
-  color: #202020;
+  font-size: 0.86rem;
+  color: var(--color-text);
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
 .hotkey {
-  font-size: 0.65rem;
-  color: #767676;
-  border: 1px solid #ececec;
-  border-radius: 4px;
-  padding: 0.1rem 0.35rem;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 0.64rem;
+  color: var(--color-text-muted);
   text-transform: uppercase;
 }
 
 .empty {
-  padding: 0.75rem;
+  padding: 14px 10px;
   font-size: 0.85rem;
-  color: #666;
+  color: var(--color-text-muted);
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
