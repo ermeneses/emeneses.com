@@ -104,11 +104,6 @@
       "keywords": []
     },
     {
-      "name": "SAP",
-      "level": "Intermedio",
-      "keywords": []
-    },
-    {
       "name": "SQL",
       "level": "Intermedio",
       "keywords": []
@@ -121,6 +116,46 @@
     {
       "name": "Inventory Management",
       "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "GMAO Implementation",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "JavaScript",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "Web Design",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "n8n Automations",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "IA Integrations",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "Design and Prototyping",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "Adobe Illustrator",
+      "level": "Intermedio",
       "keywords": []
     }
   ],

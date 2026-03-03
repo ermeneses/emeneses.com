@@ -1,6 +1,28 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Github, Link2, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import {
+  BarChart3,
+  Bot,
+  Boxes,
+  Cog,
+  Code2,
+  Database,
+  Factory,
+  Github,
+  Link2,
+  Linkedin,
+  Mail,
+  Palette,
+  PenTool,
+  Phone,
+  Sigma,
+  Table2,
+  TrendingUp,
+  Twitter,
+  Workflow,
+  Wrench,
+  type LucideIcon,
+} from "lucide-react";
 import cv from "@/data/cv.json";
 import CommandPalette from "@/components/command-palette";
 import styles from "./page.module.css";
@@ -22,6 +44,25 @@ const SOCIAL_ICONS = {
   X: Twitter,
   GitHub: Github,
 } as const;
+
+const SKILL_ICONS: Record<string, LucideIcon> = {
+  "Lean Manufacturing": Factory,
+  "Six Sigma": Sigma,
+  "Power BI": BarChart3,
+  Excel: Table2,
+  Python: Code2,
+  SQL: Database,
+  "Demand Planning": TrendingUp,
+  "Inventory Management": Boxes,
+  "GMAO Implementation": Cog,
+  JavaScript: Code2,
+  "Next.js": Code2,
+  "Web Design": PenTool,
+  "n8n Automations": Workflow,
+  "IA Integrations": Bot,
+  "Design and Prototyping": PenTool,
+  "Adobe Illustrator": Palette,
+};
 
 const paletteCommands = [
   {
@@ -223,9 +264,16 @@ export default function Page() {
 
         <Section title="Habilidades">
           <ul className={styles.skills}>
-            {skills.map((skill) => (
-              <li key={skill.name}>{skill.name}</li>
-            ))}
+            {skills.map((skill) => {
+              const Icon = SKILL_ICONS[skill.name] ?? Wrench;
+
+              return (
+                <li key={skill.name}>
+                  <Icon className={styles.skillIcon} aria-hidden="true" />
+                  <span>{skill.name}</span>
+                </li>
+              );
+            })}
           </ul>
         </Section>
 

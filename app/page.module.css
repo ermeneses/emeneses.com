@@ -277,6 +277,12 @@
   padding: 0.2rem 0.6rem;
 }
 
+.skillIcon {
+  width: 12px;
+  height: 12px;
+  stroke-width: 1.8;
+}
+
 .githubWidgetLink {
   display: block;
   width: 100%;
