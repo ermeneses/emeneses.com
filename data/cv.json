@@ -1,0 +1,168 @@
+{
+  "basics": {
+    "name": "Eduardo Meneses Denis",
+    "label": "Ingeniero Industrial enfocado en optimización de procesos, analítica operacional y mejora continua",
+    "image": "/foto.jpeg",
+    "email": "ermenesesdenis@gmail.com",
+    "phone": "+52 9841510300",
+    "url": "https://emeneses.com",
+    "summary": "Ingeniero industrial con experiencia en diseño y mejora de procesos, control de indicadores y digitalización operativa. Trabajo en la intersección entre operaciones, datos y tecnología para reducir costos, elevar productividad y mejorar la experiencia del cliente interno y externo.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Cancún",
+      "countryCode": "MX",
+      "region": "México"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "eduardo-rigoberto-meneses-denis-248486171",
+        "url": "https://www.linkedin.com/in/eduardo-rigoberto-meneses-denis-248486171/"
+      },
+      {
+        "network": "GitHub",
+        "username": "ermeneses",
+        "url": "https://github.com/ermeneses"
+      },
+      {
+        "network": "X",
+        "username": "wawomenden",
+        "url": "https://x.com/wawomenden"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Palladium Hotel Group",
+      "position": "Maintenance Specialist AM",
+      "url": "https://www.palladiumhotelgroup.com/",
+      "startDate": "2023-09-01",
+      "endDate": null,
+      "summary": "AI & HE BU - OPS | Engineering & Technical Services. Gestión de mantenimiento y hostelería en modalidad presencial en Cancún, Quintana Roo, México.",
+      "highlights": [
+        "Gestión de mantenimiento",
+        "Hostelería",
+        "Engineering & Technical Services"
+      ]
+    },
+    {
+      "name": "Palladium Hotel Group",
+      "position": "Gerente Mantenimiento Preventivo America",
+      "url": "https://www.palladiumhotelgroup.com/",
+      "startDate": "2019-04-01",
+      "endDate": "2026-03-01",
+      "summary": "Gestión de mantenimiento preventivo para la región América desde Cancún y alrededores, México, con enfoque en gestión operativa y bases de datos.",
+      "highlights": ["Mantenimiento preventivo", "Bases de datos"]
+    },
+    {
+      "name": "Palladium Hotel Group",
+      "position": "Coordinador de mantenimiento preventivo america",
+      "url": "https://www.palladiumhotelgroup.com/",
+      "startDate": "2015-08-01",
+      "endDate": "2026-03-01",
+      "summary": "Coordinación de mantenimiento preventivo en operaciones de América con soporte en análisis y gestión de bases de datos.",
+      "highlights": ["Mantenimiento preventivo", "Bases de datos"]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Instituto Tecnológico Superior de Valladolid",
+      "url": "https://www.linkedin.com/school/tecnol-gico-superior-de-valladolid/",
+      "area": "Grado en Ingeniería, Industrial Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2007-01-01",
+      "endDate": "2013-01-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Lean Manufacturing",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Six Sigma",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Power BI",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Excel",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "SAP",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "SQL",
+      "level": "Intermedio",
+      "keywords": []
+    },
+    {
+      "name": "Demand Planning",
+      "level": "Avanzado",
+      "keywords": []
+    },
+    {
+      "name": "Inventory Management",
+      "level": "Avanzado",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional"
+    }
+  ],
+  "projects": [
+    {
+      "name": "OEE Live Dashboard",
+      "isActive": true,
+      "description": "Dashboard operativo para monitorear eficiencia, disponibilidad y calidad en tiempo real.",
+      "highlights": ["Power BI", "Near real-time", "Alerts"],
+      "url": "https://example.com"
+    },
+    {
+      "name": "Warehouse Slotting Optimizer",
+      "isActive": true,
+      "description": "Modelo de slotting para reducir recorridos de picking y tiempos de preparación.",
+      "highlights": ["ABC classification", "Layout simulation"],
+      "url": "https://example.com",
+      "github": "https://github.com/emeneses"
+    },
+    {
+      "name": "Demand Forecast Toolkit",
+      "isActive": false,
+      "description": "Toolkit para forecasting y seguimiento de error (MAPE) por categoría de producto.",
+      "highlights": ["Forecasting", "Python", "Scenario analysis"],
+      "url": "https://example.com"
+    },
+    {
+      "name": "SOP KPI Board",
+      "isActive": true,
+      "description": "Tablero ejecutivo para reuniones S&OP con foco en servicio, inventario y costos.",
+      "highlights": ["Executive view", "Cross-functional", "Decision support"],
+      "url": "https://example.com"
+    }
+  ]
+}
